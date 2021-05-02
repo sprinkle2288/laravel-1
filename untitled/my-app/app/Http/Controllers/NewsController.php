@@ -2,8 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\CreateNewsRequest;
+use App\Http\Requests\UpdateNewsRequest;
+use App\Http\Resources\NewsCollection;
 use App\Models\News;
-use Illuminate\Http\Request;
+use App\Models\NewsContent;
+use App\Http\Resources\News as NewsResource;
+use Illuminate\Http\Response;
 
 class NewsController extends Controller
 {
